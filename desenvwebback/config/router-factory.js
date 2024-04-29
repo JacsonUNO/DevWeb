@@ -10,6 +10,7 @@ let app = express();
 app.use((_, res, next) => {
 	res.set('Access-Control-Allow-Headers', '*');
 	res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH');
+	res.set('Access-Control-Allow-Origin', '*');
 	next();
 });
 
